@@ -5,7 +5,7 @@ import 'dart:ui' hide Image;
 import 'package:flutter/services.dart';
 import 'package:image/image.dart' as im;
 import 'package:tflite/tflite.dart';
-import 'package:wcmc/constants.dart';
+import 'constants.dart';
 
 class AppBrain {
 
