@@ -1,32 +1,18 @@
 import 'package:flutter/material.dart';
-import 'DrawerOnly.dart';
+import 'recognizer_screen.dart';
 
-void main(){
-  runApp(MyApp());
-}
+void main() => runApp(handwrittenNumberRecognizerApp());
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+class handwrittenNumberRecognizerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "practical",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("17it123_practical"),
-          backgroundColor: Colors.blueAccent,
-        ),
-        drawer: DrawerOnly(),
-        body: Center(
-          child: Text("Open Drawer to see the Practicals",
-          style: TextStyle(
-            fontSize: 16.0,
-            color: Colors.blueAccent,
-         ),),
-        ),
+      title: 'Number Recognizer',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: RecognizerScreen(title: 'Number recognizer',),
     );
   }
 }
